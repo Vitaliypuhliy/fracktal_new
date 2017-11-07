@@ -4,7 +4,8 @@
     "autoload": {
         "psr-4": {
             "IKTO\\": ["src/"]
-        }
+        },
+        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
     "require": {
         "silex/silex": "~2.0",
