@@ -1,0 +1,4 @@
+blank:
+    path: /
+    defaults:
+        _controller: BlankController::indexAction

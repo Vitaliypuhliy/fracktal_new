@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('static/css/base.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+        <div id="page">
+            <header id="header">
+                <span class="logo">&nbsp;</span>
+            </header>
+            {% block body %}{% endblock %}
+        </div>
+        <footer id="footer">
+            © Черкаський національний університет ім. Богдана Хмельницького
+        </footer>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
