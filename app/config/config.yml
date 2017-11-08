@@ -26,3 +26,12 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+
+ikto_pgi:
+    connections:
+        dbh:
+            dbname: "%db_name%"
+            host: "%db_host%"
+            port: "%db_port%"
+            user: "%db_user%"
+            password: "%db_password%"

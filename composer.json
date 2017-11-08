@@ -12,6 +12,7 @@
         ]
     },
     "require": {
+        "wikimedia/composer-merge-plugin": "^1.4",
         "silex/silex": "~2.0",
         "symfony/symfony": "~2.8",
         "symfony/assetic-bundle": "~2.3",
@@ -28,7 +29,12 @@
     "minimum-stability": "stable",
     "extra": {
         "symfony-app-dir": "app",
-        "symfony-var-dir": "var"
+        "symfony-var-dir": "var",
+        "merge-plugin": {
+            "include": [
+                "lib/*/composer.json"
+            ]
+        }
     },
     "scripts": {
         "post-install-cmd": [

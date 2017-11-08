@@ -1,0 +1,8 @@
+[submodule "lib/pgi"]
+	path = lib/pgi
+	url = https://github.com/ikto/pgi.git
+	branch = dev
+[submodule "lib/pgi-bundle"]
+	path = lib/pgi-bundle
+	url = https://github.com/ikto/pgi-bundle.git
+	branch = dev

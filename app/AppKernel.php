@@ -43,6 +43,7 @@ class AppKernel extends Kernel
           new Symfony\Bundle\MonologBundle\MonologBundle(),
           new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
           new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+          new IKTO\PgiBundle\IktoPgiBundle(),
           new IKTO\Fracktal\CoreBundle\IktoFracktalCoreBundle(),
           new IKTO\Fracktal\ClientBundle\IktoFracktalClientBundle(),
         ];
