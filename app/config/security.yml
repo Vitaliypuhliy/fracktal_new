@@ -1,10 +1,26 @@
 security:
     providers:
         in_memory:
-            memory: ~
+            memory:
+                users:
+                    user:
+                        password: user
+                        roles: ROLE_USER
+    encoders:
+            Symfony\Component\Security\Core\User\User: plaintext
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
             anonymous: ~
+            form_login:
+                login_path: client.login
+                check_path: client.login
+            logout:
+                path: client.logout
+                target: client.login
+    access_control:
+        - { path: ^/$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/, roles: ROLE_USER }
+`

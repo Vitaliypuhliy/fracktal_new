@@ -1,4 +1,3 @@
-blank:
-    path: /
-    defaults:
-        _controller: BlankController::indexAction
+_client:
+    resource: "@IktoFracktalClientBundle/Resources/config/routing.yml"
+    prefix: /

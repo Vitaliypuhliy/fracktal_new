@@ -1,0 +1,17 @@
+client.login:
+    path: /
+    defaults:
+        _controller: IktoFracktalClientBundle:Login:index
+
+client.logout:
+    path: /logout
+
+client.tests:
+    path: /tests
+    defaults:
+        _controller: IktoFracktalClientBundle:Tests:index
+
+client.results:
+    path: /results
+    defaults:
+        _controller: IktoFracktalClientBundle:Results:index

@@ -20,7 +20,7 @@ class AppKernel extends Kernel
      */
     public function getCacheDir()
     {
-        return $this->varDir . '/cache/' . $this->environment;
+        return $this->varDir.'/cache/'.$this->environment;
     }
 
     /**
@@ -28,7 +28,7 @@ class AppKernel extends Kernel
      */
     public function getLogDir()
     {
-        return $this->varDir . '/logs';
+        return $this->varDir.'/logs';
     }
 
     /**
@@ -44,6 +44,7 @@ class AppKernel extends Kernel
           new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
           new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
           new IKTO\Fracktal\CoreBundle\IktoFracktalCoreBundle(),
+          new IKTO\Fracktal\ClientBundle\IktoFracktalClientBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
