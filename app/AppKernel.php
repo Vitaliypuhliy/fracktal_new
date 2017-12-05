@@ -46,6 +46,7 @@ class AppKernel extends Kernel
           new IKTO\PgiBundle\IktoPgiBundle(),
           new IKTO\Fracktal\CoreBundle\IktoFracktalCoreBundle(),
           new IKTO\Fracktal\ClientBundle\IktoFracktalClientBundle(),
+	  new IKTO\Fracktal\ManagerBundle\IktoFracktalManagerBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

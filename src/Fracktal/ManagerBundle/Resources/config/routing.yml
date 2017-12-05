@@ -1,0 +1,5 @@
+client.manager:
+    path: /manager
+    defaults:
+        _controller: IktoFracktalManagerBundle:Tests:index
+
